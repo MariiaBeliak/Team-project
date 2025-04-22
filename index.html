@@ -20,7 +20,7 @@
 <body>
   <header>
     <div class="container header-container">
-      <a class="header-main-link" href="./index.html"> <img class="header-logo" src="./images/logo.jpg" alt="logo"
+      <a class="header-main-link" href="./index.html"> <img class="header-logo" src="./images/logo-min.jpg" alt="logo"
           width="40" height="36" />Product </a>
       <nav>
         <ul class="navigation-list">
@@ -30,7 +30,7 @@
           <li class="nav-item"><a class="nav-link" href="./resources">Resources</a></li>
         </ul>
       </nav>
-      <ul class="button-list">
+      <ul class="header-buttons">
         <li><button class="sign-in-btn" type="button">Sign In</button></li>
         <li><button class="sign-up-btn" type="button">Sign Up</button></li>
       </ul>
@@ -39,22 +39,26 @@
 
   <main>
     <!-- first section -->
-    <section class="main-section">
-      <div class="container main-subcontainer">
+    <section class="hero-section">
+      <div class="container hero-container">
         <div>
-          <h1 class="main-title">Work at the speed of thought</h1>
-          <p class="main-text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way
+          <h1 class="hero-title">Work at the speed of thought</h1>
+          <p class="hero-descr">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way
             to imagine your next user
             experience.</p>
 
 
-          <ul class="main-list">
-            <li class="main-list-item"><button class="get-started-btn" type="button">Get started</button></li>
-            <li class="main-list-item"><button class="watch-video-btn" type="submit">Watch the Video</button></li>
+          <ul class="hero-list">
+            <li class="hero-list-item"><button class="get-started-btn" type="button">Get started</button></li>
+            <li class="hero-list-item"><button class="watch-video-btn" type="submit">
+              <svg class="play-icon" width="20" height="18">
+                <use href="./images/icons.svg#icon-play"></use>
+              </svg>
+              Watch the Video</button></li>
           </ul>
         </div>
         <div>
-          <img class="main-hero-images" src="./images/hero-img.jpg" alt="Hero images" width="610" height="555" />
+          <img class="hero-images" src="./images/hero-img-min.jpg" alt="Hero images" width="610" height="555" />
         </div>
       </div>
     </section>
@@ -65,18 +69,50 @@
         <h2 class="product-sec-title" >Product was Built Specifically for You</h2>
         <ul class="product-sec-list" >
           <li class="product-sec-list-item">
+
+            <div class="product-icon-wrap strzalka">
+              <svg class="product-sec-icon" width="11" height="18">
+                <use href="./images/icons.svg#icon-strzalka"></use>
+              </svg>
+            </div>
+
             <h2 class="product-sec-subtitle">First click tests</h2>
             <p class="product-sec-text">While most people enjoy casino gambling,</p>
           </li>
+
           <li class="product-sec-list-item">
+
+            <div class="product-icon-wrap fala">
+              <svg class="product-sec-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-fala"></use>
+              </svg>
+            </div>
+
             <h2 class="product-sec-subtitle">Design surveys</h2>
             <p class="product-sec-text">Sports betting, lottery and bingo playing for the fun</p>
           </li>
+
           <li class="product-sec-list-item">
+
+            <div class="product-icon-wrap serce">
+              <svg class="product-sec-icon" width="16" height="18">
+                <use href="./images/icons.svg#icon-serce"></use>
+              </svg>
+            </div>
+
             <h2 class="product-sec-subtitle">Preference tests</h2>
             <p class="product-sec-text">The Myspace page defines the individual.</p>
           </li>
+
           <li class="product-sec-list-item">
+
+              <div class="product-icon-wrap zegarek">
+                <svg class="product-sec-icon" width="14" height="18">
+                  <use href="./images/icons.svg#icon-zegarek"></use>
+                </svg>
+              </div>
+
+
             <h2 class="product-sec-subtitle">Five second tests</h2>
             <p class="product-sec-text">Personal choices and the overall personality of the person.</p>
           </li>
@@ -85,189 +121,349 @@
       </div>
     </section>
 
-    <section>
-      <p>Effortless Validation for</p>
-      <h2>Management</h2>
-      <p>
-        The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
-        personality of the person.
+    <!--The third section-->
+    <section class="section-management">
+
+      <div class="container section-management-wrapper">
+
+        <div class="">
+          <p class="management-intro">Effortless Validation for</p>
+          <h2 class="management-title">Management</h2>
+          <p class="management-description">
+            The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
+            personality of the person.
+          </p>
+          <h3 class="management-subtitle">Accessory makers</h3>
+          <p class="management-text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+          <h3 class="management-subtitle">Alterationists</h3>
+          <p class="management-text">If you are looking for a new way to promote your business that won’t cost you more money,</p>
+        </div>
+
+        <img src="./images/management-img-min.jpg" alt="management" width="540" height="500" class="management-image" />
+      </div>
+    </section>
+
+
+    <!-- The fourth section -->
+    <section class="section-support">
+      <div class="container support-content">
+
+        <img class="support-image" src="./images/support-img-min.jpg" alt="support" width="540" height="500" />
+
+        <div class="support-info">
+
+          <p class="support-intro">Easier decision making for</p>
+          <h2 class="support-title">Customer Support</h2>
+          <p class="support-description">
+            The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
+            personality of the person.
+          </p>
+
+          <ul class="support-list">
+
+            <li class="support-item">
+
+              <div class="support-icon-wrap support-orange-icon">
+                <svg class="support-icon " width="17" height="12">
+                  <use href="./images/icons.svg#icon-tick"></use>
+                </svg>
+              </div>
+              Never worry about overpaying for your energy again.</li>
+
+            <li class="support-item">
+
+              <div class="support-icon-wrap support-red-icon">
+                <svg class="support-icon" width="17" height="12">
+                  <use href="./images/icons.svg#icon-tick"></use>
+                </svg>
+              </div>
+              We will only switch you to energy companies that we trust and will treat you right</li>
+
+            <li class="support-item">
+
+              <div class="support-icon-wrap support-blue-icon">
+                <svg class="support-icon" width="17" height="12">
+                  <use href="./images/icons.svg#icon-tick"></use>
+                </svg>
+              </div>
+              We track the markets daily and know where the savings are.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- The fifth section -->
+    <section class="section-collaboration">
+      <div class="container collaboration-content">
+        <div class="collaboration-info">
+
+          <p class="collaboration-intro">Optimisation for</p>
+          <h2 class="collaboration-title">Collaborative</h2>
+
+          <p class="collaboration-description">
+            Few would argue that, despite the advancements of feminism over the past three decades, women still face a
+            double standard when it comes to
+            their behavior.
+          </p>
+
+          <h3 class="collaboration-subtitle">Accessory makers</h3>
+
+          <p class="collaboration-text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+          
+          <h3 class="collaboration-subtitle">Alterationists</h3>
+
+          <p class="collaboration-text">If you are looking for a new way to promote your business that won’t cost you more money,</p>
+        </div>
+
+        <img class="collaboration-image" src="./images/collaboration-img-min.jpg" alt="collaboration" width="540" height="500" />
+      </div>
+    </section>
+
+    <!-- Sixth section -->
+    <section class="section-process">
+      <div class=" process-content"> <!--container-->
+        <h3 class="process-title">Quick & Easy Process</h3>
+
+        <p class="process-description">Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page,
+          Ux/UI?</p>
+
+        <ul class="process-list">
+
+          <li class="process-item">
+            <img class="process-avatar" src="./images/avatar-min.jpg" alt="photo" width="98" height="98" />
+
+            <p class="process-text">I can take care of your pitch</p>
+          </li>
+          
+        <li class="process-item">
+            <p class="process-text">I can prototype your app</p>
+            <img class="process-avatar" src="./images/avatar2-min.jpg" alt="woman`s photo" width="98" height="98" />
+          </li>
+
+          <li class="process-item">
+            <p class="process-text">I can take care of your pitch</p>
+            <img class="process-avatar" src="./images/avatar3-min.jpg" alt="boy`s photo" width="98" height="98" />
+          </li>
+
+          <li class="process-item">
+            <img class="process-avatar" src="./images/avatar4-min.jpg" alt="man`s photo" width="98" height="98" />
+            <p class="process-text">I can help marketing strategy</p>
+          </li>
+        </ul>
+
+        <button type="button" class="process-btn">Contact our expert</button>
+      </div>
+    </section>
+
+
+    <!-- Seventh section -->
+    <section class="section-strategy">
+      <div class="container strategy-content">
+
+        <h2 class="strategy-title">Contents Strategies</h2>
+
+        <p class="strategy-description">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+        
+        <ul class="strategy-list">
+
+          <li class="strategy-card">
+
+            <img class="strategy-image" src="./images/bitmap1-min.jpg" alt="computers" width="350" height="185" />
+              <p class="strategy-meta">By <span class="strategy-author">Wahid Ari</span> | 03 March 2019</p>
+              <h3 class="strategy-card-title">Increasing Prosperity With Positive Thinking</h3>
+            
+          </li>
+
+          <li class="strategy-card">
+            <img class="strategy-image" src="./images/Bitmap2-min.jpg" alt="office" width="350" height="185" />
+            <p class="strategy-meta">By <span class="strategy-author">Wahid Ari</span> | 03 March 2019</p>
+            <h3 class="strategy-card-title">Motivation Is The First Step To Success</h3>
+          </li>
+
+          <li class="strategy-card">
+            <img class="strategy-image" src="./images/Bitmap3-min.jpg" alt="buildings" width="350" height="185" />
+            <p class="strategy-meta">By <span class="strategy-author">Wahid Ari</span> | 03 March 2019</p>
+            <h3 class="strategy-card-title">Success Steps For Your Personal Or Business</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!-- The eighth section -->
+<section class="section-pricing" >
+
+  <div class="container">
+
+    <h2 class="pricing-title">Price Table</h2>
+    <p class="pricing-subtitle">We offer competitive price</p>
+
+    <ul class="pricing-list">
+
+      <li class="pricing-item">
+        <h3 class="pricing-header">Free</h3>
+        <p class="pricing-plan">Brief price description</p>
+      
+        <p class="pricing-amount">
+          <span class="pricing-price">0</span>
+          <span class="pricing-currency">&#65284;</span> Per / month
+        </p>
+      
+        <ul class="pricing-features">
+          <li class="feature-item">Only 2 Operators</li>
+          <li class="feature-item">Notifications</li>
+          <li class="feature-item"> Landing Pages</li>
+        </ul>
+      
+        <button class="pricing-button">Order Now</button>
+      </li>
+    
+    
+    <li class="pricing-item green-pricing-box">
+      <h3 class="pricing-header ">Standard</h3>
+      <p class="pricing-plan">Brief price description</p>
+    
+      <p class="pricing-amount">
+        <span class="pricing-price">5</span>
+        <span class="pricing-currency">&#65284;</span> Per / month
       </p>
-      <h3>Accessory makers</h3>
-      <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-      <h3>Alterationists</h3>
-      <p>If you are looking for a new way to promote your business that won’t cost you more money,</p>
-      <img src="./images/management-img.jpg" alt="management" width="540" height="500" />
-    </section>
-
-    <section>
-      <img src="./images/support-img.jpg" alt="support" width="540" height="500" />
-      <p>Easier decision making for</p>
-      <h2>Customer Support</h2>
-      <p>
-        The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall
-        personality of the person.
-      </p>
-      <ul>
-        <li>Never worry about overpaying for your energy again.</li>
-        <li>We will only switch you to energy companies that we trust and will treat you right</li>
-        <li>We track the markets daily and know where the savings are.</li>
+    
+      <ul class="pricing-features">
+        <li class="feature-item">5+ Operators</li>
+        <li class="feature-item">Notifications</li>
+        <li class="feature-item"> Landing Pages</li>
       </ul>
+    
+      <button class="pricing-button">Order Now</button>
+    </li>
+    
+
+      <li class="pricing-item">
+        <h3 class="pricing-header">Premium</h3>
+        <p class="pricing-plan">Brief price description</p>
+
+        <p class="pricing-amount">
+          <span class="pricing-price">10</span> 
+          <span class="pricing-currency">&#65284;</span> Per / month</p>
+
+        <ul class="pricing-features">
+          <li class="feature-item">10+ Operators</li>
+          <li class="feature-item">Notifications</li>
+          <li class="feature-item"> Landing Pages</li>
+        </ul>
+
+        <button class="pricing-button">Order Now</button>
+      </li>
+
+    </ul>
+  </div>
+  </section>
+
+
+  <!-- The ninth section -->
+    <section class="client-feedback">
+
+      <div class="container">
+        <h2 class="feedback-title">What Clients Say</h2>
+        <p class="feedback-descr">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
+        </p>
+
+        <ul class="feedback-list">
+
+          <li class="feedback-item">
+            <img class="rating-stars" src="./images/stars-min.jpg" alt="4stars" width="106" height="18" />
+            <p class="feedback-text">Product helps you see how many more days you need to work to reach your financial goal.</p>
+            
+            <ul class="feeaback-client-list">
+              <li>
+                <img class="client-avatar" src="./images/designer1-min.jpg" alt="designer girl" width="50" height="50" /></li>
+              <li>
+                <h3 class="client-name">Wahid Ari</h3>
+                <p class="client-role">Designer</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="feedback-item">
+            <img class="rating-stars" src="./images/stars-min.jpg" alt="4stars" width="106" height="18" />
+            <p class="feedback-text">Product helps you see how many more days you need to work to reach your financial goal.</p>
+
+            <ul class="feeaback-client-list">
+              <li>
+                <img class="client-avatar" src="./images/designer2-min.jpg" alt="designer girl" width="50" height="50" /></li>
+              <li>
+                <h3 class="client-name">Wahid Ari</h3>
+                <p class="client-role">Designer</p>
+              </li>
+            </ul>
+          </li>
+
+          <li class="feedback-item">
+            <img class="rating-stars" src="./images/stars-min.jpg" alt="4stars" width="106" height="18" />
+            <p class="feedback-text">Product helps you see how many more days you need to work to reach your financial goal.</p>
+            <ul class="feeaback-client-list">
+              <li>
+                <img class="client-avatar" src="./images/designer3-min.jpg" alt="designer girl" width="50" height="50" /></li>
+              <li>
+                <h3 class="client-name">Wahid Ari</h3>
+                <p class="client-role">Designer</p>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
     </section>
 
     <section>
-      <p>Optimisation for</p>
-      <h2>Collaborative</h2>
-      <p>
-        Few would argue that, despite the advancements of feminism over the past three decades, women still face a
-        double standard when it comes to
-        their behavior.
-      </p>
-      <h3>Accessory makers</h3>
-      <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-      <h3>Alterationists</h3>
-      <p>If you are looking for a new way to promote your business that won’t cost you more money,</p>
-      <img src="./images/collaboration-img.jpg" alt="collaboration" width="540" height="500" />
-    </section>
-
-    <section>
-      <h2>Quick & Easy Process</h2>
-      <p>Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page,
-        Ux/UI?</p>
-    </section>
-
-    <section>
-      <h3>Quick & Easy Process</h3>
-      <p>Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page,
-        Ux/UI?</p>
-      <ul>
-        <li><img src="./images/avatar.jpg" alt="photo" width="98" height="98" /> I can take care of your pitch</li>
-        <li>
-          <p>I can prototype your app</p>
-          <img src="./images/avatar2.jpg" alt="woman`s photo" width="98" height="98" />
-        </li>
-        <li>
-          <p>I can take care of your pitch</p>
-          <img src="./images/avatar3.jpg" alt="boy`s photo" width="98" height="98" />
-        </li>
-        <li>
-          <img src="./images/avatar4.jpg" alt="man`s photo" width="98" height="98" />
-          <p>I can help marketing strategy</p>
-        </li>
-      </ul>
-      <button type="button">Contact our expert</button>
-    </section>
-    <section>
-      <h2>Contents Strategies</h2>
-      <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
-      <ul>
-        <li>
-          <img src="./images/bitmap1.jpg" alt="computers" width="350" height="185" />
-          <p>By Wahid Ari | 03 March 2019</p>
-          <h3>Increasing Prosperity With Positive Thinking</h3>
-        </li>
-
-        <li>
-          <img src="./images/Bitmap2.jpg" alt="office" width="350" height="185" />
-          <p>By Wahid Ari | 03 March 2019</p>
-          <h3>Motivation Is The First Step To Success</h3>
-        </li>
-
-        <li>
-          <img src="./images/Bitmap3.jpg" alt="buildings" width="350" height="185" />
-          <p>By Wahid Ari | 03 March 2019</p>
-          <h3>Success Steps For Your Personal Or Business</h3>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Price Table</h2>
-      <p>We offer competitive price</p>
-      <p class="idk">I HAVE NO IDEA SECTION</p>
-    </section>
-
-    <section>
-      <h2>What Clients Say</h2>
-      <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
-      </p>
-      <ul>
-        <li>
-          <img src="./images/stars.jpg" alt="4stars" width="106" height="18" />
-          <p>Product helps you see how many more days you need to work to reach your financial goal.</p>
-          <img src="./images/designer1.jpg" alt="designer girl" width="50" height="50" />
-          <h3>Wahid Ari</h3>
-          <p>Designer</p>
-        </li>
-        <li>
-          <img src="./images/stars.jpg" alt="4stars" width="106" height="18" />
-          <p>Product helps you see how many more days you need to work to reach your financial goal.</p>
-          <img src="./images/designer2.jpg" alt="designer girl" width="50" height="50" />
-          <h3>Wahid Ari</h3>
-          <p>Designer</p>
-        </li>
-
-        <li>
-          <img src="./images/stars.jpg" alt="4stars" width="106" height="18" />
-          <p>Product helps you see how many more days you need to work to reach your financial goal.</p>
-          <img src="./images/designer3.jpg" alt="designer girl" width="50" height="50" />
-          <h3>Wahid Ari</h3>
-          <p>Designer</p>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Join 100 Compannies who boost their business with Product</h2>
-      <button type="button">Get This</button>
-      <img src="./images/graphics.jpg" alt="graphics" width="351" height="331" />
-    </section>
+      <div class="container">
+        <h2>Join 100 Compannies who boost their business with Product</h2>
+        <button type="button">Get This</button>
+        <img src="./images/graphics-min.jpg" alt="graphics" width="351" height="331" />
+            </section>
+      </div>
   </main>
 
   <footer>
-    <a href="./index.html"> <img src="./images/logo.jpg" alt="logo" width="40" height="36" />Product </a>
-
-    <!-- Icons -->
-    <ul>
-      <li>
-        <a href="" target="_blank" rel="nofollow noreferrer noopener" aria-label="instagram"></a>
-      </li>
-      <li>
-        <a href="" target="_blank" rel="nofollow noreferrer noopener" aria-label="facebook"></a>
-      </li>
-      <li>
-        <a href="" target="_blank" rel="nofollow noreferrer noopener" aria-label="twitter"></a>
-      </li>
-    </ul>
-
-    <nav>
-      <p>Resource</p>
+    <div class="container">
+      <a href="./index.html"> <img src="./images/logo-min.jpg" alt="logo" width="40" height="36" />Product </a>
+      <!-- Icons -->
       <ul>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">FAQ</a></li>
+        <li>
+          <a href="" target="_blank" rel="nofollow noreferrer noopener" aria-label="instagram"></a>
+        </li>
+        <li>
+          <a href="" target="_blank" rel="nofollow noreferrer noopener" aria-label="facebook"></a>
+        </li>
+        <li>
+          <a href="" target="_blank" rel="nofollow noreferrer noopener" aria-label="twitter"></a>
+        </li>
       </ul>
-
-      <div>
-        <p>Legal Stuff</p>
+      <nav>
+        <p>Resource</p>
         <ul>
-          <li><a href="">Disclaimer</a></li>
-          <li><a href="">Financing</a></li>
-          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">FAQ</a></li>
         </ul>
+        <div>
+          <p>Legal Stuff</p>
+          <ul>
+            <li><a href="">Disclaimer</a></li>
+            <li><a href="">Financing</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <p>knowing you're always on the best energy deal.</p>
+        <form>
+          Тут буде інпут
+          <button type="submit">Sign up Now</button>
+        </form>
       </div>
-    </nav>
-
-    <div>
-      <p>knowing you're always on the best energy deal.</p>
-
-      <form>
-        Тут буде інпут
-        <button type="submit">Sign up Now</button>
-      </form>
+      <p>Made With Love By Figmaland All Right Reserved</p>
     </div>
-
-    <p>Made With Love By Figmaland All Right Reserved</p>
   </footer>
 </body>
 
